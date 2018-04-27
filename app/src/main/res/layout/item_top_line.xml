@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/dp_px40"
+    android:paddingLeft="@dimen/dp_px40"
+    android:paddingRight="@dimen/dp_px40"
+    android:paddingTop="@dimen/dp_px40">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="@dimen/dp_px14"
+            android:text="这是标题啊,大大的有heoo我i是中国人我啊爱中国,你好咱们加的?"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp_px28"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:text="300浏览"
+            android:textSize="@dimen/sp_px26" />
+    </LinearLayout>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/top_iv"
+        android:layout_width="@dimen/dp_px200"
+        android:layout_height="@dimen/dp_px200"
+        android:layout_marginLeft="@dimen/dp_px60"
+        android:src="@mipmap/ic_launcher_round"
+        fresco:fadeDuration="5000"
+        fresco:roundAsCircle="true" />
+
+</LinearLayout>

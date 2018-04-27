@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_px320"
+    app:cardCornerRadius="@dimen/dp_px24">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/video_pic_iv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_px240"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_play" />
+
+    <TextView
+        android:id="@+id/video_name"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_px80"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="@dimen/dp_px40"
+        android:gravity="center_vertical"
+        android:text="游轮将告诉你出国做那些传"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sp_px30" />
+
+</android.support.v7.widget.CardView>
